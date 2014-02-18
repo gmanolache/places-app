@@ -1,0 +1,40 @@
+<view title="object.fields.object">
+    <content has-header="true">
+        <div class="list card">
+
+            <div class="item item-thumbnail-left">
+                <img ng-src="http://media.vam.ac.uk/media/thira/{{ thumbFilter(object.fields.image_set.fields.local || object.fields.image_set[0].fields.local) }}">
+                <h2>{{object.fields.object}}</h2>
+                <p>{{object.fields.artist}}</p>
+            </div>
+
+            <div class="item item-body">
+                <a ng-href="http://media.vam.ac.uk/media/thira/{{object.fields.image_set.fields.local || object.fields.image_set[0].fields.local }}">
+                    <img class="full-image" ng-src="http://media.vam.ac.uk/media/thira/{{object.fields.image_set.fields.local || object.fields.image_set[0].fields.local }}">
+                </a>
+                <h3>Description</h3>
+                <p>{{ object.fields.public_access_description}}</p>
+                <h3>
+                    Location
+                </h3>
+                <p>{{ object.fields.location}}</p>
+            </div>
+
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-thumbsup"></i>
+                    Like
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-chatbox"></i>
+                    Comment
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+            </div>
+
+        </div>
+    </content>
+</view>

@@ -1,0 +1,10 @@
+<view title="'Discover'">
+  <content has-header="true">
+    <list>
+      <item ng-repeat="discovery in discoveries" type="item-text-wrap" href="#/discover/{{discovery.fields.name}}">
+        <h3>{{discovery.fields.name}}</h3>
+        <p>{{discovery.fields.description}}</p>
+      </item>
+    </list>
+  </content>
+</view>

@@ -1,0 +1,11 @@
+<view title="place">
+    <content has-header="true">
+        <div class="list">
+            <a class="item item-thumbnail-left" ng-repeat="object in objects" type="item-text-wrap" ng-href="#/object/{{object.fields.object_number}}">
+                <img ng-src="http://media.vam.ac.uk/media/thira/{{thumbFilter(object.fields.image_set.fields.local || object.fields.image_set[0].fields.local) }}">
+                <h3 ng-bind-html-unsafe="">{{object.fields.object}}</h3>
+                <p ng-bind-html-unsafe="">{{object.fields.public_access_description}}</p>
+            </a>
+        </div>
+    </content>
+</view>

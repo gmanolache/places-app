@@ -1,6 +1,6 @@
-ionic-angular-cordova-seed
+Places-App
 ==========================
 
-The perfect starting point for an Ionic project.
+Uses ionic framework
 
 - [Ionic Tutorials](http://ionicframework.com/tutorials/)
